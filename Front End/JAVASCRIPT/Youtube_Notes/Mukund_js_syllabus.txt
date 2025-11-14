@@ -1,0 +1,37 @@
+JavaScript (Core, for React Readiness)
+
+Variables (let, const, var), Data Types
+
+Operators (Arithmetic, Logical, Comparison)
+
+Conditionals (if/else, switch)
+
+Loops (for, while, do-while, for...of, for...in)
+
+Functions (declaration, expression, arrow functions, higher-order functions)
+
+Scope, Hoisting, Closures
+
+Array Methods (map, filter, reduce, forEach, find, some, every, splice, slice)
+
+String Manipulation
+
+ES6+ Features (destructuring, spread/rest, template literals, default parameters)
+
+Callbacks, Promises, async/await
+
+Event Handling, DOM Manipulation
+
+Local Storage, Session Storage
+
+Fetch API, AJAX basics
+
+Error Handling (try/catch)
+
+Object-Oriented JS (classes, prototypes, inheritance)
+
+JSON handling (parse/stringify)
+
+Modular JS (import/export)
+
+js need to see this topics
