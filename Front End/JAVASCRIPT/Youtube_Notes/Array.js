@@ -1,17 +1,19 @@
 // Array => A variable like structure that can hold more than 1 value
 
-let oddNumbers = [1, 3, 5, 7, 9, 11]
+let oddNumbers = [1, 5, 3, 7, 11, 9]
 
 oddNumbers.push(13) // - add element last
 oddNumbers.pop //- remove last element
 oddNumbers.unshift(0) //- add element front of array
 oddNumbers.shift() //- remove element front of array
 
-oddNumbers.length //- length of the array
+console.log(oddNumbers.length) //- length of the array
 
-let index = oddNumbers.indexOf(3) //- index value show if incase that numbr not in array means output is -1
+let index = oddNumbers.indexOf(3) //- index value show if incase that number not in array means output is -1
+console.log(index)
 
-oddNumbers.sort().reverse();
+console.log(oddNumbers.sort((a, b) => a - b)); //assending order 
+console.log(oddNumbers.sort((a, b) => b - a)); //desending order 
 
 for (let number of oddNumbers) {
     console.log(number)
@@ -21,13 +23,49 @@ for (let number of oddNumbers) {
 //  or string to the expanded into seperate elements
 // (unpacks the elements)
 
-let numbers = [1, 3, 5, 7, 9, 11]
+let numbers = [1, 2, 4, 8, 3, 5, 7, 9, 11]
+let numbers1 = [1, 2, 3, 5, 8, 9, 0, 6]
+
+console.log(...numbers, ...numbers1)
+
+// Print unique values in array 
+let arrray = [...new Set([...numbers, ...numbers1])]
+
+console.log(arrray)
 
 let max = Math.max(...numbers)
 
 console.log(max) //output = 11
 
+// reduce method find max 
+console.log(numbers)
+
+const maxVal = numbers.reduce((accumulator, element) => {
+    return accumulator > element ? element : accumulator
+})
+
+console.log(maxVal)
+
+const evenTotal = numbers.reduce((accumulator, element) => {
+    return element % 2 === 0 ? accumulator + element : accumulator
+}, 0)
+
+console.log(evenTotal)
+
+const oddCount = numbers.reduce((accumulator, element) => {
+    return element % 2 !== 0 ? accumulator + 1 : accumulator
+}, 0)
+
+console.log(oddCount)
+
 let fruits = ['orange', 'banana', 'apple', 'goa']
+
+// Words length total 
+const totalLength = fruits.reduce((acc, ele) => {
+    return acc + ele.length
+}, 0)
+
+console.log(totalLength)
 
 let vegitables = ['tomoto', 'potato', 'onion']
 
@@ -44,7 +82,7 @@ const newArray = [...numbers]
 // console.log(numbers)
 console.log(newArray)
 
-           
+
 
 // Rest operator => (...rest) allow a function work with a variable number of
 //  arguments by bundling them into an array

@@ -5,11 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Notes</title>
+    <style>
+        .newClass {
+            background-color: black;
+            color: white;
+        }
+
+        .newClass1 {
+            background-color: red;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <div id="container">
+        <div id="card">
 
+        </div>
+    </div>
+    <!-- class Product  -->
+    <div>
+        <form id="stuData">
+            <label>Student Name :</label>
+            <input id="stuName" type="text" placeholder="Enter Student Name">
+            <label>Roll Number :</label>
+            <input id="rollNo" type="text" placeholder="Enter Roll Number">
+            <label>Dept :</label>
+            <input id="Dept" type="text" placeholder="Enter Dept">
+            <button id="addstuBtn">Add Student</button>
+        </form>
+        <div id="stuList">
+            <h1>Student List</h1>
+        </div>
+        <div>
+            <button id="classList" onclick="startTimer()">Start Time</button>
+            <button onclick="clearTimer()">Clear Time</button>
+        </div>
     </div>
     <script src="Array.js"></script>
 </body>
