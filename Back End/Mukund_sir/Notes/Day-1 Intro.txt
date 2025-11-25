@@ -1,0 +1,118 @@
+HTML,CSS,Bottstrap,tailwind CSS,SQL
+
+front end devloper - HTML,CSS,Bootstrap,tailwind css javascript,react and nextJs and typescript
+
+Database :- sql and no sql
+
+Static and Dynamic webpage:-
+
+Static webpage:-
+
+A static webpage is a page that always shows fixed content.
+The content does NOT change unless a developer manually edits the file.
+
+Dynamic webpage:- 
+
+A dynamic webpage is a page that changes content automatically based on any triggers.
+
+React - client side rendering process.
+
+Server sends HTML → Browser runs JS → JS builds UI → Browser shows the final page. 
+
+Today Class is JAVASCRIPT
+
+Browser :-
+
+BLINKS 
+CCSOM - CSS conver to machine code  
+DOM - its API(js convert to machine code) 
+V8 ENGINE
+
+Declaration
+Inisalization
+
+EXPRESSION :-
+
+Always have a values. You can store and update and reuse. 
+
+STATEMENTS :-(for,while,if,else => only methods)
+
+every expression is statements.
+
+this is only process 
+
+VARIABLE :-
+
+variable declaration - memory alacation
+
+KEY WORDS :-
+
+var - functional scope and global scope 
+
+you can do declare ,redeclare, inizalisation and reassin values
+
+let - Block Scope
+
+you can do declare but not redeclare 
+inisalization and reassign values
+  
+const - Block Scopre
+
+only inisalization
+
+Hoisting? 
+
+when you before the inisalization to try to access the javascipt execution time the declaration part is move to a top of the scope its a hoisting.
+
+let and const => temparal dead zone --> referance error
+
+DataTypes:-
+
+1.primitive and non primitive
+
+primitive:-
+
+its hold single values
+
+String = "" or ''
+
+Number=1,2,3,4
+
+Boolean=true or false
+
+null
+
+undefined
+
+OPERATORS:-
+
+Arithmatic
+
+Assignment
+
+Compare
+
+Logical 
+
+NON PREMITIVE :-
+
+Its a referance type
+
+array,object and array of objects
+
+function
+
+ARRAY AND OBJECT:-
+
+TASK:-
+
+What is implesit and explesit ?
+
+Differnts between return and console.log?
+
+laksical scope and closures ?
+
+diffrents null and undefined ?
+
+Array and array of object and json object?
+
