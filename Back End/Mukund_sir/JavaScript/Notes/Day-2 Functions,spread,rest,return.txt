@@ -1,0 +1,104 @@
+Collision = two values clash
+
+sintactic sugar - smart code
+
+many implicit is there in javascript
+
+implicit - system change a code automatically 
+example 
+var data="10";
+var c= data+20
+
+output 1020 because system automatically convert a string this. its a implicit 
+
+conversion,concardination, ; is not required its a implicit
+
+javascript is a implicit typescript is explecit
+
+truthy values:-
+
+number,
+string,
+{},
+[]
+
+Falsy values:-
+
+false:The boolean value false.
+(0): The number zero, including \(-0\).
+0n: A BigInt with a value of zero.
+"": An empty string.
+null: The special null value.
+undefined: A variable that has not been assigned a value.
+NaN: The special "Not a Number" value.
+
+
+object la irunthu values edukurathuku name ((.)dot notation)
+
+
+
+day 2 
+
+1. FUNCTION DECLARATION :-
+
+hoisting is haven but full function is top of the scope
+
+use function key word
+
+example 
+
+console.log(add())
+
+function add(){
+return 10+20
+}
+
+2. FUNCTION EXPRESSION or ananymous function 
+
+const add =function(){
+return a+b
+}
+
+3. ARROW FUNCTION
+
+single line execution implicit method
+
+
+SPREAD
+
+unpack or expand
+
+const arr1=[1,2,3,4]
+const arr2=[3,4,5]
+
+const combined=[...arr1,...arr2,232,234];
+
+console.log(combined) // 1,2,3,4,3,4,5,232,234
+
+const data="jagan"
+
+console.log([...data]) // ['j','a','g','a','n']
+
+
+*** PARAMETERS:-
+parameter is allowed _
+*** ARUGUMENTS:-
+
+REST OPERATORS:
+
+its rest operator is only used for function parameters only
+
+many aruguments you can use rest operator. its return a array 
+
+forEach() :-
+
+each element one one function run. if incase 5 elements there is 5 times function run.
+
+
+TASK:-
+
+1. Array of object and nesed object
+
+directer name 9 movies
+
+callback function
