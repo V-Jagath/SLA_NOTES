@@ -1,0 +1,137 @@
+Closures :-
+
+const inc=()=>{
+let count=0
+return ()=>{
+count=count+1
+return count
+}
+}
+
+
+CALLBACK FUNCTION :-
+
+	a callback function is a function that is passed as an a agument to another function and get executed after 
+same work is completed.
+
+its used to handle api, asychorus work(time based work)
+
+promises - asychronus to sychorus 
+
+
+javascript is a sychorues and single theaded language and interprated language. js current version is ES16
+
+Callback is 4 types (** - important)
+
+**1. synchoros 
+**2. asynchoros
+3. anonoyous
+4. named callback
+
+Array Methods:-
+
+push - breif definition
+
+pop- remove last element in a array and return a remaining array
+
+pop is used in expression ---> return a remaining value
+
+pop is used to a variable ---> return a removed value
+
+unshift -> first element remove
+
+shift  -> first element add
+
+slice(startingindexvalue,startingindexvalue) -->exact portiononly slice 
+
+splice ()  -->dont affact original value
+
+cancat --> join a value
+
+indexof--> value to index
+
+includes --> only return a boolean values
+
+reverse() ---> reverse a originl array
+
+join() ---> array covert to string
+
+
+camalCase - 1st letter small 2nd word 1st letter capital letter  
+Pascal Case(upper camal case) --- each word 1st letter capital letter
+snake_case ---> each word between _
+kebab-case -->using css bootstrap and tailwind only using this javascript not using thia
+
+HIGHER ORDER FUNCTION :-
+
+HIGHER ORDER COMPONENT:-
+using react
+
+
+HIGHER ORDER ARRAY METHODS (CALLBACK FUNCTION BASED)
+only work array
+
+let Array=[1,2,3]
+
+1.forEach(element,index)
+
+Run the function for each element.
+
+Array.forEach(()=>{
+
+})
+
+
+why forEach don't use in react ?
+=> its dont return.but map is return a new array. dont use in a expression. but map is use in a expression.
+
+2. Map(element,index,newArray) -->return
+
+create a new array 
+
+3. Filter() -->return
+
+when your condition is true all values are return
+
+const check=Array.filter((e)=>{
+e>2
+})  // output : 3
+
+4. Find()
+
+when your condition is true 1st only one value return
+
+5. findIndex(indexvalue) // need a code 
+
+6. reduce(accumulator(initial value),element,index,newArray) --->return
+
+7.sum() -->its return true or false
+
+any one true ---> its true
+
+8. every --> all true is true or any one false return false
+
+9.sort()
+
+Array.sort((a,b)=>a-b)  its not minase its compare 
+
+very important for interview
+
+shallow copy --> not affact original array and deep copy -->affact original array -- need bref explantion
+
+what are the array methods are shallow copy and deep copy list out
+
+what is expression and what is statement
+
+
+
+
+
+
+
+
+
+
+
+
+

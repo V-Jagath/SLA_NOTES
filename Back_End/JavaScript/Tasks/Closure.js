@@ -1,15 +1,47 @@
+// Lexical scope means:
+// A function can access variables from its outer (parent) function.
+
+// Example:
+
+// function outer() {
+//     let a = 10;
+//     function inner() {
+//         console.log(a); // inner can access outer variable
+//     }
+//     inner();
+// }
+// outer();
+
+// Closure :-
+// When a function remembers the variables from its
+// outer scope even after the outer function is finished.
+
+// Example 
+
+// function outer() {
+//     let a = 10;
+//     return function inner() {
+//         console.log(a);
+//     }
+// }
+
+// let fun = outer();
+// fun(); // still prints 10 even though outer() is finished
+
+
 // function datas() {
 //     let number = 0;
 
 //     function add() {
-//         return number++
+//         console.log(number)
 //     }
-//     add()
+//     return add
 // }
 
 // const show = datas()
 
-// console.log(show.add())
+// show()
+
 
 const createAcc = () => {
     let balance = 1000; // private variable

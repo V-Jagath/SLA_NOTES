@@ -28,6 +28,9 @@ let numbers1 = [1, 2, 3, 5, 8, 9, 0, 6]
 
 console.log(...numbers, ...numbers1)
 
+const uniqueArray = [...new Set([...array1, ...array2])]
+console.log(uniqueArray)
+
 // Print unique values in array 
 let arrray = [...new Set([...numbers, ...numbers1])]
 
@@ -63,7 +66,8 @@ let fruits = ['orange', 'banana', 'apple', 'goa']
 // Words length total 
 const totalLength = fruits.reduce((acc, ele) => {
     return acc + ele.length
-}, 0)
+}, 0)   
+
 
 console.log(totalLength)
 
