@@ -27,10 +27,6 @@ let numbers = [1, 2, 4, 8, 3, 5, 7, 9, 11]
 let numbers1 = [1, 2, 3, 5, 8, 9, 0, 6]
 
 console.log(...numbers, ...numbers1)
-
-const uniqueArray = [...new Set([...array1, ...array2])]
-console.log(uniqueArray)
-
 // Print unique values in array 
 let arrray = [...new Set([...numbers, ...numbers1])]
 
@@ -66,7 +62,7 @@ let fruits = ['orange', 'banana', 'apple', 'goa']
 // Words length total 
 const totalLength = fruits.reduce((acc, ele) => {
     return acc + ele.length
-}, 0)   
+}, 0)
 
 
 console.log(totalLength)
@@ -92,15 +88,14 @@ console.log(newArray)
 //  arguments by bundling them into an array
 
 // spread - expands an array into seperate elements
-// rest - bundles separate elements into an array
-
+// rest - bundles separate elements into an array its only used in functions 
+//  how many aruments are there. you dont know you use rest operator
 
 const friend1 = "jagath"
 const friend2 = "hari"
 const friend3 = "suriya"
 const friend4 = "rk"
 const friend5 = "karthi"
-
 
 // function friendsGang(...friends) {
 //     console.log(...friends)
@@ -110,12 +105,16 @@ const friend5 = "karthi"
 
 // Array destructuring
 let arr = ['hari', 'jagath', 'rk', 'karthi', 'suriya']
-
 const [f1, f2, ...trios] = arr
-
 console.log(trios);
 
-// rest operator and callbackfunction
+let frds = ["jagath", "suriya", "karthi", "hari"]
+
+const [frd1, frd2, ...tuo] = frds
+
+console.log(tuo)
+
+// rest operator and callbackfunction .you give more arguments you use spread operator
 
 function friendGang(...friend) {
     return friend
@@ -132,7 +131,7 @@ function sum(...numbers) {
     }
     return result
 }
-const total = sum(1, 2, 3, 4, 5)
+const total = sum(1, 2, 3, 4, 5, 34, 38)
 
 console.log(`Total sum is ${total}`)
 
@@ -211,10 +210,12 @@ function EvenNumbers(element) {
 
 console.log(evenNums)
 
-const ages = [15, 18, 19, 21, 23, 25, 12, 1, 26, 27, 31]
+const ages = [15, 18, 19, 21, 23, 25, 12, 1, 26, 27, 31, 98, 111]
 
-const Younger = ages.filter(youngAge).sort().reverse()
+const sortAge = ages.sort((a, b) => a - b)
+console.log(sortAge)
 
+const Younger = ages.filter(youngAge).sort((a, b) => a - b)
 console.log(Younger)
 
 function youngAge(e) {

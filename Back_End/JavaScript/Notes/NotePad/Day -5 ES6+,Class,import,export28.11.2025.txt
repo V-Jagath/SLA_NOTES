@@ -1,0 +1,120 @@
+ES6+ full and full react
+
+ES5 AND ES6 DIFFERNT IS VERY IMPORTANT FOR INTERVIEW.
+
+1.LET AND CONST :-
+
+Block scope
+
+2. Arrow Function :-
+
+without function name
+
+(add,)=>
+
+3.Template litrest(``)
+
+expression(has value) + statement(has action) 
+
+4. Destructuring :-
+
+const obj={name:"react",year:2023}
+
+const {name,year}=obj;
+
+console.log(name)
+
+const arr=[10,20,30]
+
+const [name,...second]=arr
+
+console.log(arr)
+
+5. Default perameter:-
+
+const app=(name:"React")=>{
+console.log(name)
+}
+
+6. Import and Export :-
+
+EXPORT DEFAULT:-
+
+export default sub=(a,b)=>{
+return a-b
+} 
+
+(or)
+
+const sub=(a,b)=>{
+return a-b
+} 
+
+NAMED EXPORT :-
+
+export const add=(a,b)=>{
+return a+b
+}
+
+NAMED EXPORT use this for import another file --> {function name} 
+
+example
+import {sub} from "./path"
+
+EXPORT DEFAULT use directly 
+example
+
+import add from "./path"
+
+
+7. Optional Chaining(?) :-
+
+only used for object.
+
+const users={name:"React",subject:"React Node"}
+
+console.log(users.name.field?)
+
+
+8. Nullish Coalescing(??) :- 
+
+left side null or undefined right side data show
+
+let a =null
+
+console.log(a ?? "I am Showing") 
+
+output:-
+
+"I am Showing"
+
+
+9. Logical assignment(??)
+
+a undefined or null only the value is reassign but a is not undefiend or null its not reassign
+
+let a;
+
+a ??= 100 
+
+console.log(a) //100
+
+
+10. FOR OF (USED IN ARRAYS)
+
+const arr=[10,15,20]
+
+for(const num of arr){
+console.log(num + 2)
+}
+
+
+11. FOR IN (USED IN OBJECTS)
+
+
+12. Map,filter,find, reduce,includes
+
+Sync,Async
+
+
+Day 1 to day 6 all convert to a html page 
