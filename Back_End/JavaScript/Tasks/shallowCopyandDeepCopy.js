@@ -136,7 +136,7 @@ let object = {
 
 const CopyObject = structuredClone(object);
 
-CopyObject.course1.sub = "Phython"
+CopyObject.course1.sub = "Python"
 
 console.log(CopyObject)
 console.log(object)
