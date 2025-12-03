@@ -1,0 +1,10 @@
+What is TypeScript does:
+    Static checking
+
+    TypeScript is just for static checking, it just analyze your code and help 
+you to understand thatyou might be running into potential error without even running the 
+code and getting the errors at the run time itself.
+
+TypeScript is a devlopment tool. its a superset of javascript. its helps to 
+write a powerfull code.
+

@@ -1,0 +1,155 @@
+Website Devlopment Before React:-
+
+HTML,CSS,BOOTSRAP,TAILWINDCSS
+
+JS:-
+DOM API DATA PROCESS OF OBJECT MODEL
+DYNAMIC WEB APPLICATION
+
+BACKEND:-
+JAVA,PYTHON,PHP
+
+DATABASE :-
+
+SQL
+
+Problems:-
+
+1. code writing lot of code need to write
+
+2. Reload the whole page for single update
+
+3. We can't do any reuse style and functions
+
+
+Making library :-
+
+1. Jquery
+2. json
+3. ajax
+
+they librarys are working together html,css,other front end dev tools.
+
+FRAMEWORK :-
+
+Predefinded structure
+file structure
+file handling
+folder name
+code
+all already predefinded
+
+LIBRARY:-
+
+someone write the code fot this its like buildin but not fixed file 
+handlings and folder handling and code also indipentent.
+
+React:-
+
+1. React is a javascript library. for building user interfaces. 
+
+1. CRA (old and basic)
+2. VITE (Modern/Advanced) 
+
+2. Mainly we make single page application (SPA).
+3. It was created by Facebook(Meta).
+4. Component based architecturre
+5. It's Declarative library that helps us to build dynamuc and fast front end application.
+6. In the React we can use js to jsx process then we have  compilers for this process.
+7. React mainly process like Transpilar
+
+React is not a compiler to compile the code . its just library.
+
+3 important tools:-
+
+JSX to JS
+TSX to JS
+
+1. JSX is not understand browser. so we, use Bable compailar is a transpilar it convert jsx to js.
+
+transpilar ---> high level language(ts,jsx) to other high level language(js) ----> machine language 
+
+2. MODULE BUNDING
+
+Bundle - webpack/vite/parcel
+
+js files css files images json components assets all files are 
+
+3. V8 ENGINE:-
+
+js engine = interpreter + JIT Compiler
+
+
+jsx+es6+component ---> Babale ---> jsx,tsx,ts -->JS,es6+ -->ES5
+
+parse-bytcode --> machine code
+
+UI Render
+
+
+compiler---> high level language to machine code  
+
+
+1. CREATE PHASE
+2. UPDATE PHASE
+first 2 is very important
+3. OPTIMIZE PHASE
+
+NODE --> js basic server or direct js code (Run time Environment) 
+
+NPM - Note Package Manager
+
+NPX - Node Package eXecute
+
+
+1. CREATE PHASE
+
+1. CRA Method(old and basic)
+npx create react app
+localhost:3000
+project setup - npm and npx
+
+CRA is the old official tool to set up a react project . it uses webpack under the hood. 
+
+Befifits:-
+1. zero configuration
+2. stable for many years 
+3. great for beginners
+
+Problems :-
+1. very slow startup
+2. slow build time
+3. Heavy webpacl bundling
+4. Hard to customize
+5. Maintence droped
+
+2. VITE Method (Modern and Advanced)
+vite default localhost:5173
+npm create vite@latest viteReact
+
+Vite next Generation front end build tool devloped by (VUE js create)
+Vite stands for fast
+
+ES Build super fasr go_based complier
+
+Roll up -->
+
+its very fast 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

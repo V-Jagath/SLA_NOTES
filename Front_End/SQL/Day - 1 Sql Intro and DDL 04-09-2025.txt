@@ -1,0 +1,117 @@
+Day - 1 DDL 04-09-2025.txt
+
+📘 SQL Basics (Corrected & Structured)
+🔹 Storage Systems
+
+JavaScript (JS) → Temporary storage in memory.
+
+RDBMS (Relational Database Management System) → Stores data in tables (rows & columns).
+
+NoSQL → Stores data in JSON (object format) → Key–Value pairs.
+
+🔹 Keys
+
+Primary Key → Unique identifier for each row (cannot be NULL,you can access in our table cannot be duplicate).
+
+Unique Key → Ensures uniqueness but can allow one NULL (differs from Primary).
+
+Foreign Key → Creates a relationship between two tables.
+
+🔹 Popular SQL Software
+
+PostgreSQL
+
+MySQL Workbench
+
+XAMPP Server (commonly used for MySQL + PHP)
+
+WAMP Server (Windows Apache MySQL PHP)
+
+🔹 DDL (Data Definition Language)
+
+DDL is used to define or modify the structure of database objects.
+(You cannot manipulate data with DDL; only structure.)
+
+✅ DDL Commands
+
+CREATE → Create a new database or table.
+
+ALTER → Modify the structure of a table (add, modify, drop columns).
+
+DROP → Delete a database or table completely.
+
+TRUNCATE → Delete only data (keeps table structure).
+
+RENAME → Rename a table.
+
+🔹 Data Types
+Numeric
+
+INT → Whole numbers (up to 10 digits normally, DBMS specific).
+
+BIGINT → Very large numbers.
+
+DECIMAL(p, s) / NUMERIC(p, s) → Precise numbers with decimal point.
+
+p (precision) → total digits
+
+s (scale) → digits after decimal
+
+FLOAT / DOUBLE → Approximate decimal values.
+
+Character
+
+CHAR(n) → Fixed length string (e.g., CHAR(5) always stores 5 chars).
+
+VARCHAR(n) → Variable length string.
+
+TEXT → Very large strings.
+
+NVARCHAR(n) → Unicode characters (special languages, symbols).
+
+Date & Time
+
+DATE → YYYY-MM-DD
+
+TIME → HH:MM:SS
+
+DATETIME / TIMESTAMP → Date + Time.
+
+YEAR → YYYY.
+
+Boolean
+
+BOOLEAN / BIT → True or False (1/0).
+
+🔹 Constraints
+
+PRIMARY KEY → Uniquely identifies each row.
+
+FOREIGN KEY → Links two tables.
+
+NOT NULL → Column must have a value.
+
+NULL → Column can be empty.
+
+UNIQUE → No duplicate values allowed.
+
+DEFAULT → Assigns a default value if not provided.
+
+CHECK → Ensures a condition is true for column values.
+
+🔹 SQL Syntax Examples
+Create Database
+CREATE DATABASE teashop;
+
+Use Database
+USE teashop;
+
+Create Table
+CREATE TABLE employee (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50) NOT NULL,
+    age INT CHECK (age > 18),
+    salary DECIMAL(10,2) DEFAULT 20000.00,
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES department(dept_id)
+);
