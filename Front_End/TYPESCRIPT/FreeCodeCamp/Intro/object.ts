@@ -4,7 +4,7 @@
 //     isActive: true
 // }
 
-function createUser({ name: string, isPaid: boolean }) {
+function createUser({ name: string, age: number, isPaid: boolean }) {
     return `${name} and it ${isPaid}`
 }
 
