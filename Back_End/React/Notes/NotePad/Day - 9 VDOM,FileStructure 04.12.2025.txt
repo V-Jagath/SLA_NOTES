@@ -1,0 +1,156 @@
+Bable compailar -- its not a compailar its a transpailar. transpailar is convert high level language to another high level language.
+
+React router DOM -its using for Single Page Application
+
+virtual DOM - Diffing and reconlication
+
+Virtual DOM - React does not update the real dom directly
+
+what is real DOM ?
+
+html tree - structue - object
+
+first react create a light weight copy of the DOM in memory. This is a copy is called virtualDOM (VDOM - Virtual DOM).
+
+WHy React using VDOM:-
+
+the react dom is slow update every change triggers enpensive browser operations.
+like 
+
+REflow,
+repaint,
+layout calculations
+
+
+** that 2 topics very important for interview
+What is DIFFING ? (the algorith in react)
+Recinsiliation
+1. DIFF Algorithm :-
+
+	when your UI needs to change 
+1. react builds a new virtual dom tree
+2. campare it with the old tree(VDOM).
+3. Finds the smallest possible changes
+4. Update only those parts in the real dom.
+
+this comparison process = diffing
+
+
+2.RECONSILIATION :-
+
+Reactfull process of updating the UI>
+
+1. Receive NEW UI (any change)
+2. Create a new Virtual DOM 
+3. Diff old VDOM and New DOM
+4. Deside which nodes need to be update remove/Add
+5. apply minimal updates to real dom.
+
+STEP 1:-
+
+React converts Your JSX to virtual DOM tree
+
+Step 2:-
+
+when ever data changes,react re-render the components tree(not the real dom)
+this produce a new VDOM
+
+step 3:-
+DIFFING Algorithm
+
+FInd what changed, what stayed same what need to be removed, what needed to be added.
+
+Generate part
+
+React prepaes a patch object - list of minimal DOM Operations
+
+Commit phaase
+
+react real dom changes
+
+JS ENGINE _ V8 ENGINE
+
+VDOM create - js engine
+
+DIff - JS ENgine
+
+patch building - JS engine
+
+Autual DOM Update - Browser DOM API 
+
+
+CRA - its kind of webpack. its take more time because using bundle js
+
+VITE - Roll-up more easy to build 
+
+
+
+FILE STRUCTUTE:- VITE
+
+1. Node Modules - Node Module is a library holding folder (library - pre defined functions)
+
+2. Public - Absolute Path(standrad path) its handle image file
+
+3. src - is a important main folder to execute your file 
+
+4. gitignore - what files move to git 
+
+5. eslint.config.js , vite.config.js - its handle configration processs (execute process) 
+ 
+6. index.html - its a important file to render the file
+
+7. package.json - holding dependancies file,file run comments, all downloads  
+
+8. package-lock.json - testing purpose
+
+9. README.md - project description
+
+10. vite.config.js - its very important for vite
+
+main.jsx - virtual dom create process 
+
+app.jsx - you work starting file
+
+app.css --> normal css
+
+index.css --> import for bootstrap and tailwind. because, its use all files
+
+
+const App=()=>{
+return (
+
+<div>
+This is My First Files
+</div>
+
+)
+}
+
+export default App
+
+why use Pascal case ?
+
+universal all devlopers are using this becasue easy to identify.
+
+
+const NavBar=()=>{
+
+}
+
+export default NavBar;
+
+return 3 Methods :-
+
+()
+<></>
+<div><div/>
+
+
+Fragment :- 
+
+single parent or one parent element for maintaining multiple child tags.
+
+
+TASK :-
+
+ 
