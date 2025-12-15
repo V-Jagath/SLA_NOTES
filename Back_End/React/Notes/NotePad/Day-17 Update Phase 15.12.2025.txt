@@ -64,3 +64,5 @@ Task :-
 onClick,onSubmit,onChange,onMouseOver,onMouseDown,onMouseEnter
 
 
+2. For Loop:-
+
