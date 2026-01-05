@@ -1,0 +1,42 @@
+Day - 30 useContext 05.01.2026
+
+props:-
+parent to children data tranfer 
+
+useContext :-
+
+Global data sharing 
+
+that is used to share data globally between components. its mainly used to avoid props drilling
+store the common data -->login,register and addtoCart.
+
+used to theme change,translate. 
+
+
+useContext 
+
+1. Create Context
+2. Provide context - logic
+3. consume context - components wrap to app
+
+file structure
+
+src ---> context(folder) ---> themeContext.tsx and provide context file ---> themeProvider 
+components - 
+
+const
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
