@@ -1,0 +1,28 @@
+HOC - higher Order Component
+
+A higher order component is  function that takes  component and returnna new component enhanced component.
+its used to code reusability.
+
+Must Used Keywords()
+
+Wraped Components-input Components
+
+Enhanced Components - output Components
+
+Props injection - Extra Properties (Props)
+
+Immutability  - Original Component not Change 
+
+Reusability - Multiple Component we can use
+
+Convention - with(its a higher ordercomponent like use --> hook,auth--> usecontext)
+
+
+const withSomething=()=>()=>{ return <component {...props}/>} }
+
+
+
+File Order :-
+
+Button.jsx --> Normal Component
+withAlert.jsx --> 
