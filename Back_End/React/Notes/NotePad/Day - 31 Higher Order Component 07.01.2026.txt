@@ -1,0 +1,7 @@
+Day 31 - useMemo()
+
+useMemo() is a ract hook used to mmoize(cache) the result of an expensive calculation and recmpute its only
+when its dpndenc changes.
+
+ 
+

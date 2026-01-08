@@ -1,0 +1,10 @@
+Day 31 - useMemo()
+
+useMemo() is a ract hook used to memoize(cache) the result of an expensive calculation and recmpute its only
+when its dpndenc changes.
+
+useCallback is ract hook its passing or return a entire function. use callback is used to memomize a function.
+its referance to prevent unnesary rerender its returns a rerender. its mostly used to parent to child function tranfer. 
+
+ 
+
