@@ -1,0 +1,136 @@
+update phase ---> state, events , hooks
+
+other HOOKS
+
+1. useLayoutEffact:-
+
+its similar to use effact
+
+useLayoutEffect(()=>{},[])
+
+its sync process.
+
+Render-DOM Update - useLayoutEffect - paint - useEffect
+
+2. useImperativeHandle :-
+parent child control hook
+
+3. useID :-
+
+random id generate.its very useful for server side.
+
+
+4. useTransition :-
+
+you page content only first load.non urgent content.
+
+5. usedeffedValue :-
+
+Automatically delay thae browser 
+live search
+
+
+API HANDLING:-
+scroll,keypress,mousemove
+
+1. throutling
+executte the funciton at fixed intervel no matter how many time that.
+
+automally time set for this method. 
+
+
+2. debounsing 
+execute the function only after the event is stop fireing for the given time.
+autosuggstion
+button double prevent
+
+
+========================================================================================
+
+✅ React Update Phase: State, Events & Hooks
+
+In React, the update phase is triggered whenever the component’s state or props change, usually through events like onClick, onChange, or API responses. React then re-renders the component, updates the DOM, and finally runs lifecycle hooks such as useEffect or useLayoutEffect. Hooks allow us to manage state, handle side effects, control rendering flow, optimize performance, and communicate between parent and child components in a functional component architecture.
+
+✅ Other Important React Hooks
+1. useLayoutEffect
+
+useLayoutEffect works almost the same as useEffect, but it runs synchronously after React updates the DOM but before the browser paints the screen.
+This makes it useful for tasks such as measuring DOM elements, scroll/animation adjustments, or layout calculations.
+
+Execution order:
+Render → DOM Update → useLayoutEffect → Browser Paint → useEffect
+
+2. useImperativeHandle
+
+This hook allows a parent component to directly access specific functions or values inside a child component.
+It is used together with forwardRef and is helpful in cases like custom input focus methods, scroll controls, or manual DOM operations.
+
+3. useId
+
+useId generates a unique, stable ID for accessibility usage such as label → input linking.
+It is especially useful for server-side rendering, avoiding hydration mismatches and ensuring consistent ID generation across client and server.
+
+4. useTransition
+
+useTransition helps you split urgent and non-urgent UI updates. Urgent updates (like typing) happen immediately, while non-urgent updates (like filtering a large list) run in the background.
+It improves UI performance and prevents blocking the main thread.
+
+Example use case:
+
+Typing should be fast
+
+Search results update can be delayed (non-urgent)
+
+5. useDeferredValue
+
+useDeferredValue delays updating a state value, allowing the browser to remain responsive.
+This is commonly used in live search, large filtering operations, or expensive computations, preventing UI lag.
+
+✅ API Handling & Performance Optimization Events
+
+For events like scroll, keypress, mousemove, we often use:
+
+1. Throttling
+
+Throttling ensures a function executes at a fixed time interval, no matter how many times the event is fired.
+It improves performance during high-frequency events like scroll and mousemove.
+
+Example use case:
+
+Scroll position tracking
+
+Mouse movement tracking
+
+Window resize events
+
+2. Debouncing
+
+Debouncing runs a function only after the event stops firing for a specified time.
+Great for reducing API calls and preventing unnecessary re-renders.
+
+Example use cases:
+
+Search autosuggestions
+
+Validating form fields
+
+Preventing double-button-clicks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
